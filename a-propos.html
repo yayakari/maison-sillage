@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qui Sommes-Nous, Équipe Éditoriale & Contact — MAISON SILLAGE</title>
+  <meta name="description" content="Découvrez l'histoire de MAISON SILLAGE, notre équipe éditoriale (Léa Mansouri & Yassine El Amrani), notre charte d'indépendance et nos coordonnées directes." />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-adsense-account" content="ca-pub-0000000000000000" />
+  <link rel="canonical" href="https://maison-sillage.github.io/a-propos.html" />
+
+  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #FAF6F0;
+      --surface: #FFFFFF;
+      --ink: #211B18;
+      --muted: #655A52;
+      --accent: #9E6B43;
+      --border: #E6DDD0;
+      --footer-bg: #1B1613;
+      --footer-ink: #EFE7DC;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.72;
+      font-size: 15.5px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { opacity: 0.85; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+
+    header.site-hdr {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+    .hdr-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 16px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .brand-link {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .sub-nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .sub-nav a {
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--muted);
+      padding: 6px 10px;
+      border-radius: 999px;
+      transition: all 0.2s;
+    }
+    .sub-nav a:hover, .sub-nav a.active {
+      background: var(--bg);
+      color: var(--ink);
+      border: 1px solid var(--border);
+    }
+
+    .doc-hero {
+      padding: 54px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .kicker {
+      display: inline-block;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .doc-hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.18;
+      margin-bottom: 12px;
+      color: var(--ink);
+    }
+    .doc-hero p.lead {
+      font-size: 16.5px;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    main.doc-main { padding: 40px 0 68px; }
+    .doc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 34px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 26px rgba(0,0,0,0.03);
+    }
+    .doc-card h2 {
+      font-family: var(--serif);
+      font-size: 24px;
+      margin-bottom: 12px;
+      color: var(--ink);
+    }
+    .doc-card h3 {
+      font-size: 16.5px;
+      font-weight: 700;
+      margin: 18px 0 8px;
+      color: var(--ink);
+    }
+    .doc-card p { margin-bottom: 12px; color: var(--muted); }
+    .doc-card p strong { color: var(--ink); }
+    .doc-card ul { margin: 10px 0 14px 20px; color: var(--muted); }
+    .doc-card li { margin-bottom: 7px; }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin-top: 14px;
+    }
+    .meta-item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+    }
+    .meta-item span {
+      display: block;
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    footer.site-ftr {
+      background: var(--footer-bg);
+      color: var(--footer-ink);
+      padding: 48px 0 34px;
+    }
+    .ftr-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 32px;
+    }
+    .ftr-inner h4 {
+      font-family: var(--serif);
+      font-size: 17px;
+      margin-bottom: 12px;
+      color: #FFFFFF;
+    }
+    .ftr-inner ul { list-style: none; }
+    .ftr-inner li { margin-bottom: 8px; font-size: 14px; }
+    .ftr-inner a, .ftr-inner button {
+      color: var(--footer-ink);
+      opacity: 0.85;
+      text-decoration: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font: inherit;
+      padding: 0;
+    }
+    .ftr-inner a:hover, .ftr-inner button:hover { opacity: 1; text-decoration: underline; }
+    .ftr-bottom {
+      max-width: 1180px;
+      margin: 28px auto 0;
+      padding: 20px 22px 0;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 12.5px;
+      opacity: 0.72;
+    }
+
+    .cookie-bar {
+      position: fixed;
+      bottom: 18px;
+      left: 18px;
+      right: 18px;
+      max-width: 920px;
+      margin: 0 auto;
+      background: var(--surface);
+      color: var(--ink);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 22px;
+      box-shadow: 0 18px 48px rgba(0,0,0,0.16);
+      z-index: 90;
+      display: none;
+    }
+    .cookie-btns {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .c-btn {
+      padding: 9px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--ink);
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .c-btn.primary {
+      background: var(--ink);
+      color: #FFFFFF;
+      border-color: var(--ink);
+    }
+
+    @media (max-width: 760px) {
+      .doc-card { padding: 22px 20px; }
+      .ftr-inner { grid-template-columns: 1fr; gap: 24px; }
+    }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%231B1613%22/%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2254%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22Georgia%2Csans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2224%22%20fill%3D%22%23C9A36B%22%3EMS%3C/text%3E%3C/svg%3E" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Qui Sommes-Nous, Équipe Éditoriale & Contact — MAISON SILLAGE" />
+  <meta property="og:description" content="Découvrez l'histoire de MAISON SILLAGE, notre équipe éditoriale (Léa Mansouri & Yassine El Amrani), notre charte d'indépendance et nos coordonnées directes." />
+  <meta property="og:url" content="https://maison-sillage.github.io/a-propos.html" />
+</head>
+<body id="top">
+  <header class="site-hdr">
+    <div class="hdr-inner">
+      <a href="index.html" class="brand-link">MAISON SILLAGE</a>
+      <nav class="sub-nav" aria-label="Navigation principale et informations légales">
+        <a href="index.html" class="">← Boutique & Magazine</a>
+<a href="a-propos.html" class="active">À Propos & Rédaction</a>
+<a href="mentions-legales.html" class="">Mentions Légales</a>
+<a href="politique-confidentialite.html" class="">Confidentialité & AdSense</a>
+<a href="cgv.html" class="">CGV & Retours</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="doc-hero">
+    <div class="wrap">
+      <span class="kicker">La Maison • Équipe & Charte</span>
+      <h1>Qui Sommes-Nous, Équipe Éditoriale & Contact</h1>
+      <p class="lead">Découvrez l'histoire de MAISON SILLAGE, notre équipe éditoriale (Léa Mansouri & Yassine El Amrani), notre charte d'indépendance et nos coordonnées directes.</p>
+    </div>
+  </section>
+
+  <main class="doc-main">
+    <div class="wrap">
+      
+      <article class="doc-card">
+        <h2>Notre Histoire &amp; Notre Engagement</h2>
+        <p><strong>MAISON SILLAGE</strong> (Maison Sillage SAS) est une maison indépendante née d'une exigence simple : proposer des créations durables, traçables et façonnées dans les règles de l'art, sans intermédiaires superflus ni promesses artificielles. Implantées entre l'Europe et le bassin méditerranéen (Paris • Grasse • Marrakech), nos équipes travaillent en circuit court avec des ateliers sélectionnés pour la constance de leurs finitions et le respect des normes européennes en vigueur.</p>
+        <p>Parfums alcooliques d'embellissement olfactif conformes au 51e Amendement de l'IFRA et au Règlement Européen (CE) n°1223/2009 (usage cosmétique externe uniquement, sans visée sanitaire).</p>
+        <div class="meta-grid">
+          <div class="meta-item">
+            <span>Raison sociale</span>
+            <strong>Maison Sillage SAS</strong><br />Capital social : 100 000 MAD / 10 000 €
+          </div>
+          <div class="meta-item">
+            <span>Adresse &amp; Atelier</span>
+            8 Cours Honoré Cresp, 06130 Grasse, France • Atelier : 14 Rue des Vieux Marrakchis, 40000 Marrakech
+          </div>
+          <div class="meta-item">
+            <span>Service Client Direct</span>
+            Courriel : <a href="mailto:conciergerie@maisonsillage.com">conciergerie@maisonsillage.com</a><br />Tél. : +33 4 93 36 41 18
+          </div>
+        </div>
+      </article>
+
+      <article class="doc-card" id="equipe">
+        <h2>Comité Éditorial — Le Journal Olfactif</h2>
+        <p>Au-delà de notre boutique, nous publions gratuitement <strong>Le Journal Olfactif</strong> afin de partager avec nos lecteurs des guides techniques, des critères d'achat objectifs et des gestes d'entretien vérifiés en atelier. Chaque dossier est rédigé et relu humainement par nos spécialistes internes :</p>
+        <div class="meta-grid">
+          <div class="meta-item">
+            <span>Formulatrice Olfactive & Directrice Éditoriale (Grasse)</span>
+            <strong>Léa Mansouri</strong>
+            <p style="margin-top:6px;font-size:14px;">Diplômée en chimie aromatique à Grasse, Léa supervise la macération lente de nos extraits titrés à 28 % en alcool de blé biologique et rédige nos chroniques dédiées aux familles olfactives et à la tenue sur peau.</p>
+          </div>
+          <div class="meta-item">
+            <span>Botaniste Sourceur & Historien des Matières Premières (Marrakech)</span>
+            <strong>Yassine El Amrani</strong>
+            <p style="margin-top:6px;font-size:14px;">Spécialiste des filières agricoles méditerranéennes, Yassine documente les récoltes saisonnières du safran de Taliouine, de la rose Damascena du Dadès et du cèdre de l'Atlas auprès de nos cueilleurs partenaires.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="doc-card" id="charte">
+        <h2>Charte d'Indépendance Éditoriale &amp; Transparence Publicitaire</h2>
+        <p>L'accès à l'intégralité des dossiers publiés dans <em>Le Journal Olfactif</em> est gratuit et ouvert à tous sans création de compte. Pour soutenir le financement de ces reportages photographiques et essais comparatifs, certaines pages éditoriales peuvent accueillir après validation des espaces publicitaires clairement identifiés sous l'intitulé réglementaire <strong>« Publicité »</strong> ou <strong>« Liens sponsorisés »</strong> via le réseau Google AdSense.</p>
+        <ul>
+          <li><strong>Indépendance stricte :</strong> Nos recommandations d'entretien, comparatifs de matériaux et guides de choix sont rédigés en totale autonomie par notre équipe interne, sans aucune influence des annonceurs tiers.</li>
+          <li><strong>Exactitude et mise à jour :</strong> Chaque article mentionne son auteur, sa date de publication et fait l'objet d'une révision périodique dès qu'une norme européenne ou un procédé d'atelier évolue.</li>
+          <li><strong>Nous contacter :</strong> Pour toute question sur une commande, un échange ou une précision éditoriale, écrivez-nous à <a href="mailto:conciergerie@maisonsillage.com">conciergerie@maisonsillage.com</a> (réponse sous 24 heures ouvrées, du lundi au samedi de 9h00 à 19h00).</li>
+        </ul>
+      </article>
+    
+    </div>
+  </main>
+
+  <footer class="site-ftr">
+    <div class="ftr-inner">
+      <div>
+        <h4>MAISON SILLAGE</h4>
+        <p style="font-size:14px;opacity:0.82;max-width:360px;">Haute Parfumerie Botanique & Journal Olfactif Indépendant. Parfums alcooliques d'embellissement olfactif conformes au 51e Amendement de l'IFRA et au Règlement Européen (CE) n°1223/2009 (usage cosmétique externe uniquement, sans visée sanitaire).</p>
+      </div>
+      <div>
+        <h4>Navigation Boutique</h4>
+        <ul>
+          <li><a href="index.html">Accueil &amp; Catalogue</a></li>
+          <li><a href="index.html">Magazine Le Journal Olfactif</a></li>
+          <li><a href="a-propos.html">Qui sommes-nous &amp; Contact</a></li>
+          <li><a href="#top">Haut de page ↑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informations Légales &amp; RGPD</h4>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions Légales (GitHub Pages)</a></li>
+          <li><a href="politique-confidentialite.html">Confidentialité &amp; Cookies AdSense</a></li>
+          <li><a href="cgv.html">Conditions Générales de Vente</a></li>
+          <li><button type="button" onclick="openCookiePrefs()">Gérer mes choix cookies (RGPD)</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <span>© 2026 Maison Sillage SAS — Tous droits réservés.</span>
+      <span>Paris • Grasse • Marrakech</span>
+    </div>
+  </footer>
+
+  <div class="cookie-bar" id="subCookieBar" role="dialog" aria-label="Préférences cookies RGPD">
+    <p style="font-size:13.5px;color:var(--muted);">
+      <strong style="color:var(--ink);">Respect de votre vie privée (RGPD &amp; Google Consent Mode v2) :</strong>
+      Par défaut, tous les traceurs publicitaires et analytiques sont désactivés. Avec votre accord, Google AdSense peut utiliser des cookies afin de financer nos dossiers gratuits (Le Journal Olfactif).
+      <a href="politique-confidentialite.html">Lire la politique complète</a>.
+    </p>
+    <div id="subCookieGranular" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);font-size:13px;">
+      <label style="margin-right:16px;"><input type="checkbox" checked disabled /> Essentiels (panier &amp; sécurité)</label>
+      <label style="margin-right:16px;"><input type="checkbox" id="chkSubAnalytics" /> Mesure d'audience</label>
+      <label><input type="checkbox" id="chkSubAds" /> Publicité Google AdSense</label>
+    </div>
+    <div class="cookie-btns">
+      <button type="button" class="c-btn" onclick="applySubConsent(false,false)">Tout refuser</button>
+      <button type="button" class="c-btn" onclick="toggleSubGranular()">Personnaliser</button>
+      <button type="button" class="c-btn primary" onclick="applySubConsent(true,true)">Tout accepter</button>
+    </div>
+  </div>
+
+  <script>
+    const CONSENT_KEY_SUB = 'consent_v2_' + '01-maison-sillage';
+    function applySubConsent(analytics, ads) {
+      const payload = {
+        ad_storage: ads ? 'granted' : 'denied',
+        ad_user_data: ads ? 'granted' : 'denied',
+        ad_personalization: ads ? 'granted' : 'denied',
+        analytics_storage: analytics ? 'granted' : 'denied'
+      };
+      gtag('consent', 'update', payload);
+      try { localStorage.setItem(CONSENT_KEY_SUB, JSON.stringify(payload)); } catch(e) {}
+      document.getElementById('subCookieBar').style.display = 'none';
+    }
+    function toggleSubGranular() {
+      const g = document.getElementById('subCookieGranular');
+      if (g.style.display === 'none') {
+        g.style.display = 'block';
+      } else {
+        applySubConsent(document.getElementById('chkSubAnalytics').checked, document.getElementById('chkSubAds').checked);
+      }
+    }
+    function openCookiePrefs() {
+      document.getElementById('subCookieBar').style.display = 'block';
+    }
+    (function initSubConsent() {
+      try {
+        const saved = localStorage.getItem(CONSENT_KEY_SUB);
+        if (saved) {
+          gtag('consent', 'update', JSON.parse(saved));
+        } else {
+          document.getElementById('subCookieBar').style.display = 'block';
+        }
+      } catch(e) {
+        document.getElementById('subCookieBar').style.display = 'block';
+      }
+    })();
+  </script>
+</body>
+</html>
